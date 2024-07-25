@@ -6,11 +6,11 @@ As the known saying: "You have been tedious, and you have found - then believe!"
 
 # Description
 
-First, you configure the search queries you will want to do when using TediousFinder.
+First, clicking `Ctrl+Shift+1` opens the Settings page, there you should configure the search queries you want to do when using TediousFinder.
 
-In the Settings page of the extension, you can configure the search engine and query that should take action. inside the query you can enter `<<TEXT>>` that will be replaces with your search text when searching in TediousFinder.
+In the Settings page of the extension, you can configure the search engine and query template that should be used in search. inside the query template you can enter `<<TEXT>>` that will be replaces with your search text when searching in TediousFinder.
 
-Then, clicking `Ctrl+Shift+F` will open the TediousFinder page and you will be able to enter your query text and do the search.
+Then, clicking `Ctrl+Shift+2` will open the Search page and you will be able to enter your search text and run the search.
 
 ## Example of configuration
 

@@ -2,6 +2,20 @@
   box-sizing: border-box;
 }
 
+div.centerDiv {
+  left: 50%;
+  top: 50%;
+  margin-left: -25%;
+  position: absolute;
+  margin-top: -25%;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
 /* Style the search field */
 #searchForm input[type=text] {
   padding: 10px;
