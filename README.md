@@ -16,9 +16,9 @@ Then, clicking `Ctrl+Shift+F` will open the TediousFinder page and you will be a
 
 | SearchEngine | Query                     |
 |--------------|---------------------------|
-| Google       | <<TEXT>>                  |
-| Google       | filetype:PDF <<TEXT>>     |
-| Bing         | imagesize:medium <<TEXT>> |
+| Google       | \<\<TEXT\>\>                  |
+| Google       | filetype:PDF \<\<TEXT\>\>     |
+| Bing         | imagesize:medium \<\<TEXT\>\> |
 
 # Installation
 
