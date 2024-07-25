@@ -13,11 +13,12 @@
   height: 0;
 }
 
-.templateKeyword {
-  border: 1px solid;
-  padding-inline: 2px;
-  display: inline-block;
-  user-select: text;
+.highlight {
+    background-color: #f0f0f0; /* Light gray background */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 2px 4px; /* Some padding */
+    font-family: monospace; /* Monospace font */
 }
 
 .fun-button {
@@ -41,6 +42,13 @@
 .fun-button:active {
     background-color: #3e8e41; /* Even darker green */
     transform: scale(0.95); /* Slightly shrink the button */
+}
+
+.templateKeyword {
+  border: 1px solid;
+  padding-inline: 2px;
+  display: inline-block;
+  user-select: text;
 }
 
 /* The slider */
