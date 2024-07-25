@@ -13,6 +13,36 @@
   height: 0;
 }
 
+.templateKeyword {
+  border: 1px solid;
+  padding-inline: 2px;
+  display: inline-block;
+  user-select: text;
+}
+
+.fun-button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.fun-button:hover {
+    background-color: #45a049; /* Darker green */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+.fun-button:active {
+    background-color: #3e8e41; /* Even darker green */
+    transform: scale(0.95); /* Slightly shrink the button */
+}
+
 /* The slider */
 .slider {
   position: absolute;

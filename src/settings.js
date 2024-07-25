@@ -1,4 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
+  // Open Search page in new tab
+  document.getElementById('openSearchPage').addEventListener('click', function() {
+    chrome.tabs.create({ url: chrome.runtime.getURL("src/searcher.html") });
+  });
+
   var addRowButton = document.getElementById('addRowButton');
   var saveButton = document.getElementById('saveButton');
   var searchEnginesContainer = document.getElementById('searchEngines');
