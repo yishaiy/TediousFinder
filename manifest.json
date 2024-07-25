@@ -19,7 +19,6 @@
     "320": "images/icon-320.png"
   },
 
-  /* Settings page on extension icon click */
   "action": {
     "default_icon": {
       "16": "images/icon-16.png",
@@ -31,7 +30,6 @@
     "default_popup": "src/settings.html"
   },
 
-  /* Define keyboard shortcut to open search page */
   "commands": {
     "open_search_page": {
       "suggested_key": {
