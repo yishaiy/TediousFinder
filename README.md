@@ -23,3 +23,10 @@ Then, clicking `Ctrl+Shift+F` will open the TediousFinder page and you will be a
 # Installation
 
 Add with chrome web store: [TesiousFinder]().
+
+# TODO
+
+0. better UI.
+1. add search history feature.
+2. handle incognito mode.
+3. 
