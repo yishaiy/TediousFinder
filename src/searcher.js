@@ -32,6 +32,6 @@ function performSearch(event) {
 
 // Function to build search URL by replacing TEMPLATE_KEYWORD in queryTemplate, and inserting full query into engineUrl.
 function buildSearchUrl(engineUrl, queryTemplate, searchText) {
-  var query = queryTemplate.replace(TEMPLATE_KEYWORD, searchText);
+  var query = queryTemplate.replaceAll(TEMPLATE_KEYWORD, searchText);
   return engineUrl.replace(QUERY_PLACEHOLDER, encodeURIComponent(query));
 }
