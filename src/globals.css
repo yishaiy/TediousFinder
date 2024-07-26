@@ -14,6 +14,12 @@
     --primary: var(--primary-500);
     --primary-foreground: white;
 
+    --success-400: #4ade80;
+    --success-500: #22c55e;
+    --success-600: #16a34a;
+    --success: var(--success-500);
+    --success-foreground: white;
+
     --danger-500: #ef4444;
     --danger: var(--danger-500);
 
@@ -127,6 +133,12 @@
 
     --danger-500: #ef4444;
     --danger: var(--danger-500);
+
+    --success-600: #4ade80;
+    --success-500: #22c55e;
+    --success-400: #16a34a;
+    --success: var(--success-500);
+    --success-foreground: white;
 
     /* Slate */
     --default-950: #f8fafc;
@@ -272,6 +284,17 @@ padding: var(--s-2);
             &:hover {
                 background-color: var(--primary-400);
                 border-color: var(--primary-400);
+            }
+        }
+ /* Success button style */
+        &.success {
+            color: var(--success-foreground);
+            background-color: var(--success);
+            border-color: var(--success);
+
+            &:hover {
+                background-color: var(--success-400);
+                border-color: var(--success-400);
             }
         }
 
