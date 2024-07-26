@@ -44,7 +44,7 @@
     transform: scale(0.95); /* Slightly shrink the button */
 }
 
-.templateKeyword {
+#templateKeyword {
   border: 1px solid;
   padding-inline: 2px;
   display: inline-block;
