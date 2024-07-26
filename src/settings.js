@@ -4,8 +4,31 @@ document.addEventListener('DOMContentLoaded', function () {
     chrome.tabs.create({ url: chrome.runtime.getURL("src/searcher.html") });
   });
 
-  // Set template keyword
-  document.getElementById('templateKeyword').textContent = TEMPLATE_KEYWORD;
+  // Set template keyword & insert it into focused inputTemplate when clicked
+  var keywordSpan = document.getElementById('templateKeyword');
+  keywordSpan.textContent = TEMPLATE_KEYWORD;
+  keywordSpan.addEventListener('mousedown', function(event) {
+    // Prevent the span from taking focus
+    event.preventDefault();
+  });
+  keywordSpan.addEventListener('click', function () {
+    // Insert TEMPLATE_KEYWORD into inputTemplate if focused.
+    const focusedElement = document.activeElement;
+
+    if (focusedElement && focusedElement.id === 'inputTemplate') {
+      const startPos = focusedElement.selectionStart;
+      const endPos = focusedElement.selectionEnd;
+      const currentValue = focusedElement.value;
+
+      // Insert the constant string at the cursor position
+      focusedElement.value = currentValue.substring(0, startPos) + TEMPLATE_KEYWORD + currentValue.substring(endPos);
+
+      // Set the cursor position after the inserted TEMPLATE_KEYWORD
+      const newCursorPos = startPos + TEMPLATE_KEYWORD.length;
+      focusedElement.setSelectionRange(newCursorPos, newCursorPos);
+      focusedElement.focus();
+    }
+  });
 
   var addRowButton = document.getElementById('addRowButton');
   var saveButton = document.getElementById('saveButton');
