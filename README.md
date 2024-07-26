@@ -1,4 +1,4 @@
-![TediousFinder Logo](./images/logo.png)
+![TediousFinder Logo](./images/logo.jpeg)
 
 # Tedious Finder
 
