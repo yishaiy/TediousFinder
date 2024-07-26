@@ -13,9 +13,12 @@
   height: 0;
 }
 
-.templateKeyword {
-  border: 1px solid;
-  padding-inline: 2px;
+#templateKeyword {
+  border: var(--s-px) solid var(--default);
+  background-color: var(--content);
+  border-radius: var(--s-2);
+  color: var(--default-900);
+  padding: var(--s-0_5) var(--s-1);
   display: inline-block;
   user-select: text;
 }

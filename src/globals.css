@@ -158,13 +158,13 @@ body {
 }
 
 kbd {
-    background-color: var(--default-50);
+    background-color: white;
     border-radius: var(--s-0_5);
     border: 1px solid var(--default-300);
     box-shadow:
-        0 1px 1px var(--default-700),
-        0 2px 0 0 var(--default-200) inset;
-    color: var(--default-700);
+        0 1px 1px gray,
+        0 2px 0 0 lightgray inset;
+    color: black;
     display: inline-block;
     font-size: 0.85em;
     font-weight: 700;
@@ -337,7 +337,7 @@ padding: var(--s-2);
 
 
     &::placeholder {
-        color: var(--default-400);
+        color: var(--default-700);
     }
 
     /* Bordered input style */
