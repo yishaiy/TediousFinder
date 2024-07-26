@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
     row.className = 'flex gap-1';
 
     var selectEngine = document.createElement('select');
+    selectEngine.id = 'selectEngine';
     selectEngine.className = 'select sm bordered flex-1 basis-1/3';
     
     // Populate options from searchEnginesDict
@@ -44,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     var inputTemplate = document.createElement('input');
+    inputTemplate.id = 'inputTemplate';
     inputTemplate.type = 'text';
     inputTemplate.className = 'input sm bordered flex-1 basis-2/3';
     inputTemplate.placeholder = 'Enter query template';
@@ -70,8 +72,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var engines = [];
 
     rows.forEach(function(row) {
-      var engineName = row.querySelector('.selectEngine').value;
-      var queryTemplate = row.querySelector('.inputTemplate').value;
+      var engineName = row.querySelector('#selectEngine').value;
+      var queryTemplate = row.querySelector('#inputTemplate').value;
       engines.push({ engineName: engineName, queryTemplate: queryTemplate });
     });
 
