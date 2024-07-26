@@ -13,37 +13,6 @@
   height: 0;
 }
 
-.highlight {
-    background-color: #f0f0f0; /* Light gray background */
-    border: 1px solid #ccc; /* Light gray border */
-    border-radius: 4px; /* Rounded corners */
-    padding: 2px 4px; /* Some padding */
-    font-family: monospace; /* Monospace font */
-}
-
-.fun-button {
-  background-color: #04AA6D; /* Green */
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
-}
-
-.fun-button:hover {
-    background-color: #45a049; /* Darker green */
-    transform: scale(1.05); /* Slightly enlarge the button */
-}
-
-.fun-button:active {
-    background-color: #3e8e41; /* Even darker green */
-    transform: scale(0.95); /* Slightly shrink the button */
-}
-
 .templateKeyword {
   border: 1px solid;
   padding-inline: 2px;
@@ -97,39 +66,4 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
-}
-
-
-/* search configuration */
-.container {
-  max-width: 600px;
-  margin: 20px auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-family: Arial, sans-serif;
-}
-
-#searchEngines {
-  margin-bottom: 20px;
-}
-
-.row {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.row .selectEngine {
-  flex: 1;
-  margin-right: 10px;
-}
-
-.row .inputTemplate {
-  flex: 2;
-  margin-right: 10px;
-}
-
-.row .deleteButton {
-  flex: 0;
 }
