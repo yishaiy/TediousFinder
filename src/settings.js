@@ -27,10 +27,11 @@ document.addEventListener('DOMContentLoaded', function() {
   // Function to add a new row
   function addRow(engineName = '', queryTemplate = '') {
     var row = document.createElement('div');
-    row.className = 'row';
+    row.className = 'flex gap-1';
 
     var selectEngine = document.createElement('select');
-    selectEngine.className = 'selectEngine';
+    selectEngine.id = 'selectEngine';
+    selectEngine.className = 'select sm bordered flex-1 basis-1/3';
     
     // Populate options from searchEnginesDict
     Object.keys(searchEnginesDict).forEach(function(engine) {
@@ -44,16 +45,16 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     var inputTemplate = document.createElement('input');
+    inputTemplate.id = 'inputTemplate';
     inputTemplate.type = 'text';
-    inputTemplate.className = 'inputTemplate';
+    inputTemplate.className = 'input sm bordered flex-1 basis-2/3';
     inputTemplate.placeholder = 'Enter query template';
     if (queryTemplate) {
       inputTemplate.value = queryTemplate;
     }
 
-    var deleteButton = document.createElement('button');
-    deleteButton.className = 'deleteButton';
-    deleteButton.textContent = 'X';
+    var deleteButton = document.createElement('div');
+    deleteButton.className = 'fa fa-lg fa-solid fa-trash text-danger p-2 cursor-pointer self-center';
     deleteButton.addEventListener('click', function() {
       row.remove();
     });
@@ -71,8 +72,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var engines = [];
 
     rows.forEach(function(row) {
-      var engineName = row.querySelector('.selectEngine').value;
-      var queryTemplate = row.querySelector('.inputTemplate').value;
+      var engineName = row.querySelector('#selectEngine').value;
+      var queryTemplate = row.querySelector('#inputTemplate').value;
       engines.push({ engineName: engineName, queryTemplate: queryTemplate });
     });
 
