@@ -21,6 +21,7 @@
   padding: var(--s-0_5) var(--s-1);
   display: inline-block;
   user-select: text;
+  cursor: pointer;
 }
 
 /* The slider */
