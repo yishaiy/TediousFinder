@@ -22,6 +22,15 @@ Then, clicking `Ctrl+Shift+2` will open the Search page and you will be able to 
 | Google       | filetype:PDF \<\<TEXT\>\>     |
 | Bing         | imagesize:medium \<\<TEXT\>\> |
 
+## Shortcuts
+General:
+ * **Alt+a**: [A]ppend new Field (create new one, like clicking on the button)
+ 
+Field (when focused on one input field):
+ * **Alt+d**: [D]uplicate current field with same values
+ * **Alt+s**: Insert [S]ymbol into current place in input (symbol = <<TEXT>>)
+ * **Alt+Shift+X**: Delete current field
+
 # Installation
 
 Add with chrome web store: [TesiousFinder]().

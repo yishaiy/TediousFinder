@@ -24,6 +24,14 @@ document.addEventListener('DOMContentLoaded', function () {
     saveSearchEngines();
   });
 
+  document.addEventListener('keydown', (event) => {
+    // AAA NEW FIELD
+    if (event.altKey && event.key === 'a') {
+      event.preventDefault();
+      addRow();
+    }
+  });
+
   // Function to add a new row
   function addRow(engineName = '', queryTemplate = '') {
     var row = document.createElement('div');
@@ -54,6 +62,39 @@ document.addEventListener('DOMContentLoaded', function () {
       inputTemplate.value = queryTemplate;
     }
 
+    inputTemplate.addEventListener('keydown', (event) => {
+      // DUPLICATE CURRENT FIELD
+      if (event.altKey && event.key === 'd') {
+        event.preventDefault();
+        addRow(selectEngine.value, inputTemplate.value);
+      }
+
+      // DELETE CURRENT FIELD
+      if (event.altKey && event.shiftKey && event.key === 'X') {
+        event.preventDefault();
+        row.remove();
+      }
+
+      // INSERT SYMBOL IN CURRENT FIELD
+      if (event.altKey && event.key === 's') {
+        event.preventDefault();
+
+        const startPos = inputTemplate.selectionStart;
+        const endPos = inputTemplate.selectionEnd;
+
+        // Text to insert
+        const insertText = TEMPLATE_KEYWORD;
+
+        // Insert the text at the current cursor position
+        inputTemplate.value = inputTemplate.value.substring(0, startPos) +
+          insertText +
+          inputTemplate.value.substring(endPos);
+
+        // Move the cursor to the end of the inserted text
+        inputTemplate.setSelectionRange(startPos + insertText.length, startPos + insertText.length);
+      }
+    });
+
     var deleteButton = document.createElement('div');
     deleteButton.className = 'fa fa-lg fa-solid fa-trash text-danger p-2 cursor-pointer self-center';
     deleteButton.addEventListener('click', function () {
@@ -65,6 +106,7 @@ document.addEventListener('DOMContentLoaded', function () {
     row.appendChild(deleteButton);
 
     searchEnginesContainer.appendChild(row);
+    inputTemplate.focus();
   }
 
   // Function to save search engines to Chrome storage
