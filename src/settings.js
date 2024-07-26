@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Function to add a new row
   function addRow(engineName = '', queryTemplate = '') {
     var row = document.createElement('div');
+    row.id = 'row';
     row.className = 'flex gap-1';
 
     var selectEngine = document.createElement('select');
@@ -68,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Function to save search engines to Chrome storage
   function saveSearchEngines() {
-    var rows = searchEnginesContainer.querySelectorAll('.row');
+    var rows = searchEnginesContainer.querySelectorAll('#row');
     var engines = [];
 
     rows.forEach(function(row) {
