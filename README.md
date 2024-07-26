@@ -37,8 +37,6 @@ To run this extension locally:
     - Assuming there are no errors, the extension should load into your browser
 
 # TODO
-
-0. better UI.
-1. add search history feature.
-2. handle incognito mode.
-3. 
+- [x] better UI.
+- [ ]  add search history feature.
+- [ ]  handle incognito mode.
