@@ -27,10 +27,11 @@ Add with chrome web store: [TesiousFinder]().
 # Development
 To run this extension locally:
  1. Navigate to `chrome://extensions`
- 2. Expand the Developer dropdown menu and click “Load Unpacked Extension”
- 3. Navigate to the local folder containing the extension’s code and click Ok
+ 2. Toggle on the Developer Mode on the top right
+ 3. Click “Load Unpacked Extension”
+ 4. Navigate to the local folder containing the extension’s code and click Ok
     - This is the root of this project, the one containing the `manifest.json` file
- 4. Now you can see the extension loaded, making changes to the code will reflect when you reopen the extension 
+ 5. Now you can see the extension loaded, making changes to the code will reflect when you reopen the extension 
     - Assuming there are no errors, the extension should load into your browser
 
 # TODO
