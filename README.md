@@ -1,3 +1,5 @@
+![TediousFinder Logo](./images/logo.png)
+
 # Tedious Finder
 
 This is a chrome extension that enables you to make multiple search queries, with just 1-click.

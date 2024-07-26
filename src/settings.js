@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
     chrome.tabs.create({ url: chrome.runtime.getURL("src/searcher.html") });
   });
 
+  // Set template keyword
+  document.getElementById('templateKeyword').textContent = TEMPLATE_KEYWORD;
+
   var addRowButton = document.getElementById('addRowButton');
   var saveButton = document.getElementById('saveButton');
   var searchEnginesContainer = document.getElementById('searchEngines');
