@@ -33,7 +33,7 @@ Field (when focused on one input field):
 
 # Installation
 
-Add with chrome web store: [TesiousFinder]().
+Add with chrome web store: [TesiousFinder](https://chromewebstore.google.com/detail/tediousfinder/nbhlladglnnecmjhmbbnmobgbfegeejp).
 
 # Development
 To run this extension locally:
